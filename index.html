@@ -14,21 +14,20 @@
         padding: 3px 0;
       }
       div > div {
-        color: green;
-        padding: 3px 0;
+        color: red;
+        padding: 30px 0;
       }
     </style>
   </head>
   <body>
-    <h1>Change text on input</h1>
+    <h1>change text on input</h1>
     <input id="text-input" />
     <div id="text-wrapper"></div>
     <!-- script -->
     <script>
       const textWrapper = document.getElementById("text-wrapper");
       const textInput = document.getElementById("text-input");
-      const words = "a place,a platter,between,b place,c place".split(",");
-
+      const words = "an apple,a pear,between,be nice,come over".split(",");
       function changeText(e) {
         const resultWords = words.filter(word =>
           word.startsWith(e.target.value)
